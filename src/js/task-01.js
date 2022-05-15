@@ -13,9 +13,9 @@ console.log(
 Category: ${categoriesName[0].textContent}
 Elements: ${animals.length}
 
-Category: ${categoriesName[1].innerText}
+Category: ${categoriesName[1].textContent}
 Elements: ${products.length}
 
-Category: ${categoriesName[2].innerText}
+Category: ${categoriesName[2].textContent}
 Elements: ${technologies.length}`
 );
