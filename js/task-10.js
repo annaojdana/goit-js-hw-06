@@ -4,10 +4,7 @@ const btnDestroy = document.querySelector("[data-destroy]");
 const boxes = document.querySelector("#boxes");
 
 btnCreate.addEventListener("click", createBoxes);
-btnDestroy.addEventListener("click", () => {
-  const boxAll = document.querySelectorAll('#boxes div');
-  boxAll.forEach(box => box.remove());
-});
+btnDestroy.addEventListener("click", destroyBoxes);
 
 
 
@@ -25,7 +22,11 @@ function createBoxes(amount) {
   return boxes.insertAdjacentHTML("afterbegin", markup);
 
 }
+function destroyBoxes() {
+ const boxAll = document.querySelectorAll('#boxes div');
+  boxAll.forEach(box => box.remove());
+};
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
+};

@@ -7,7 +7,6 @@ const max = fontSizeControler.max;
 
 fontSizeControler.addEventListener("change", () => {
     let size = fontSizeControler.value;
-    console.log(size);
     text.style.fontSize = size + "px";
 }
     );
